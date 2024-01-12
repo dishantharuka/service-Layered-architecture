@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ChangePane" prefHeight="527.0" prefWidth="1071.0" styleClass="paneBackground" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.AppoinmentForm">
+   <children>
+      <ImageView fitHeight="527.0" fitWidth="1072.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asstes/dash1.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="315.0" layoutY="229.0" mnemonicParsing="false" onAction="#ClearOnAction" prefHeight="44.0" prefWidth="121.0" styleClass="dashBackground" text="Clear">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="501.0" layoutY="229.0" mnemonicParsing="false" onAction="#DeleteOnAction" prefHeight="44.0" prefWidth="121.0" styleClass="dashBackground" text="Delete">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="689.0" layoutY="227.0" mnemonicParsing="false" onAction="#UpdateOnAction" prefHeight="44.0" prefWidth="121.0" styleClass="dashBackground" text="Update">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="871.0" layoutY="227.0" mnemonicParsing="false" onAction="#SaveOnAction" prefHeight="44.0" prefWidth="121.0" styleClass="dashBackground" text="save">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblAppoinment" layoutX="95.0" layoutY="285.0" opacity="0.85" prefHeight="214.0" prefWidth="891.0" stylesheets="@../styles/style.css">
+         <columns>
+            <TableColumn fx:id="colAppoinmentId" minWidth="170.0" prefWidth="75.0" text="Appoinment ID" />
+            <TableColumn fx:id="colVehicleId" minWidth="170.0" prefWidth="75.0" text="Vehicle ID" />
+            <TableColumn fx:id="colServiceType" minWidth="170.0" prefWidth="75.0" text="Service Type" />
+            <TableColumn fx:id="colTime" minWidth="170.0" prefWidth="75.0" text="Time" />
+            <TableColumn fx:id="coldate" minWidth="170.0" prefWidth="75.0" text="Date" />
+         </columns>
+      </TableView>
+      <Label layoutX="3.0" layoutY="2.0" prefHeight="29.0" prefWidth="185.0" text="Appoinment Details">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="appointmentId" layoutX="44.0" layoutY="90.0" prefHeight="29.0" prefWidth="144.0" textFill="#c60a0a">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="52.0" prefHeight="30.0" prefWidth="163.0" text="Appoinment Id :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="233.0" layoutY="52.0" prefHeight="30.0" prefWidth="163.0" text="Vehicle Id :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbVehicle" layoutX="233.0" layoutY="93.0" opacity="0.75" prefHeight="30.0" prefWidth="193.0" />
+      <Label layoutX="480.0" layoutY="52.0" prefHeight="30.0" prefWidth="163.0" text="Service Type :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbServiceType" layoutX="480.0" layoutY="93.0" opacity="0.75" prefHeight="30.0" prefWidth="209.0" />
+      <Label layoutX="790.0" layoutY="52.0" prefHeight="30.0" prefWidth="62.0" text="Date:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datePicker" layoutX="790.0" layoutY="90.0" opacity="0.75" prefHeight="36.0" prefWidth="155.0" />
+      <Label layoutX="44.0" layoutY="161.0" prefHeight="30.0" prefWidth="62.0" text="Time :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbTime" layoutX="44.0" layoutY="191.0" opacity="0.75" prefHeight="36.0" prefWidth="185.0" />
+   </children>
+</AnchorPane>

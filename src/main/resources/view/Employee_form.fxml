@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="544.0" prefWidth="1078.0" styleClass="paneBackground" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.EmployeeFormController">
+   <ImageView fitHeight="544.0" fitWidth="1078.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../asstes/dash1.png" />
+      </image>
+   </ImageView>
+   <TextField fx:id="txtEmpName" layoutX="375.0" layoutY="29.0" opacity="0.75" prefHeight="45.0" prefWidth="301.0" promptText="Employee Name" styleClass="lablebtn">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="txtContactNo" layoutX="24.0" layoutY="125.0" opacity="0.75" prefHeight="45.0" prefWidth="301.0" promptText="Contac No" styleClass="lablebtn">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="txtSalary" layoutX="24.0" layoutY="214.0" opacity="0.75" prefHeight="45.0" prefWidth="301.0" promptText="Salary" styleClass="lablebtn">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </TextField>
+   <Button layoutX="787.0" layoutY="148.0" mnemonicParsing="false" onAction="#ClearOnAction" prefHeight="41.0" prefWidth="144.0" styleClass="dashBackground" text="Clear">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Button>
+   <Button layoutX="784.0" layoutY="33.0" mnemonicParsing="false" onAction="#DeleteOnAction" prefHeight="41.0" prefWidth="144.0" styleClass="dashBackground" text="Delete">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Button>
+   <Button layoutX="785.0" layoutY="91.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="41.0" prefWidth="144.0" styleClass="dashBackground" text="Update">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Button>
+   <Button layoutX="787.0" layoutY="206.0" mnemonicParsing="false" onAction="#SaveOnAction" prefHeight="41.0" prefWidth="144.0" styleClass="dashBackground" text="save">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Button>
+   <TableView fx:id="tblEmployee" layoutX="37.0" layoutY="290.0" opacity="0.85" prefHeight="214.0" prefWidth="1024.0">
+      <columns>
+         <TableColumn fx:id="colEmpId" minWidth="170.0" prefWidth="75.0" text="Employee ID" />
+         <TableColumn fx:id="colEmpName" minWidth="170.0" prefWidth="75.0" text="Employee Name" />
+         <TableColumn fx:id="colContactNo" minWidth="170.0" prefWidth="75.0" text="Contact No" />
+         <TableColumn fx:id="colSalary" minWidth="170.0" prefWidth="75.0" text="Salary" />
+         <TableColumn fx:id="colJobRole" minWidth="170.0" prefWidth="75.0" text="Job Roll" />
+         <TableColumn fx:id="colUserID" minWidth="170.0" prefWidth="75.0" text="User ID" />
+      </columns>
+   </TableView>
+   <Button layoutX="984.0" layoutY="19.0" mnemonicParsing="false" onAction="#SalaryOnAction" prefHeight="34.0" prefWidth="89.0" styleClass="btn" text="Salary">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Button>
+   <Label layoutX="53.0" layoutY="25.0" text="Employee ID :">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Label>
+   <Label fx:id="lblEmployeeId" layoutX="53.0" layoutY="53.0" textFill="#ff3b3b">
+      <font>
+         <Font name="System Bold" size="22.0" />
+      </font>
+   </Label>
+   <Label layoutX="386.0" layoutY="103.0" text="Job role :">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Label>
+   <ComboBox fx:id="cmbJobRole" layoutX="386.0" layoutY="131.0" opacity="0.75" prefHeight="34.0" prefWidth="227.0" />
+   <Label layoutX="386.0" layoutY="196.0" text="User Id :">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Label>
+   <ComboBox fx:id="cmbuserId" layoutX="386.0" layoutY="228.0" opacity="0.75" prefHeight="34.0" prefWidth="227.0" />
+</AnchorPane>

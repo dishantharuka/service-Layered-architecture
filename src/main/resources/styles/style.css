@@ -1,0 +1,100 @@
+.font{
+    -fx-font-family: "Noto Sans";
+}
+.textBox{
+    -fx-font-size: 20;
+    -fx-border-radius: 40;
+    -fx-background-radius: 40;
+}
+.loginbtn{
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-background-color: #FEADCE;
+    -fx-text-fill: #000000;
+}
+.loginbtn:hover{
+    -fx-background-color: #ff4b94;
+    -fx-text-fill: #ffffff;
+}
+.signupbtn{
+    -fx-font-weight: 700;
+}
+.fontdash{
+    -fx-font-family: "Lucida Sans Unicode";
+}
+.btn {
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+    -fx-font-size: 15;
+}
+
+.DashBtn {
+    -fx-background-color: transparent;
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+    -fx-font-size: 15;
+}
+
+.btn:hover {
+    -fx-background-color: #7297f5;
+    -fx-border-color: #ffffff;
+    -fx-text-fill: #000000;
+}
+.table{
+    -fx-font: 'Noto Sans';
+    -fx-font-size: 15;
+}
+
+.text-prompt{
+
+    -fx-font-size: 20;
+}
+.productPane{
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-border-color: #070707;
+    -fx-background-color: #a5e7f6;
+    -fx-text-fill: #000000;
+    -fx-opacity: 100;
+}
+
+.managebtn{
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-border-color: #000000;
+    -fx-background-color: #00d3fc;
+    -fx-text-fill: #000000;
+}
+.font3{
+    -fx-font-family: "monospace";
+    -fx-text-fill: #ffffff;
+}
+.font4{
+    -fx-font-family: "Times New Roman";
+    -fx-text-fill: #ff0058;
+}
+.lablebtn{
+    -fx-border-color: #000000;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+    -fx-text-alignment: Center;
+}
+.lablebtn:hover{
+    -fx-background-color: #7297f5;
+    -fx-text-fill: #000000;
+}
+
+.dashBackground{
+    -fx-background-color: linear-gradient(#4895e1, #fafbfc);
+}
+
+.loginBackground{
+    -fx-background-color: linear-gradient(#4d4d4d,white);
+}
+
+.paneBackground{
+    -fx-background-color: linear-gradient(#fdfdfd, #4ee2ef);
+}
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ChangePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="1096.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.MainFormController">
+   <children>
+      <ImageView fitHeight="342.0" fitWidth="686.0" layoutX="29.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asstes/dash1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="482.0" fitWidth="589.0" layoutX="577.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asstes/dash0.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="342.0" fitWidth="686.0" layoutX="420.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asstes/dash2.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="386.0" layoutY="29.0" prefHeight="136.0" prefWidth="314.0" style="-fx-background-radius: 30;" styleClass="dashBackground" stylesheets="@../styles/style.css">
+         <children>
+            <ImageView fitHeight="60.0" fitWidth="49.0" layoutX="21.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asstes/dash001.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="84.0" layoutY="31.0" text="Total Customer">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotalCus" layoutX="219.0" layoutY="74.0" prefHeight="47.0" prefWidth="57.0" text="12">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="33.0" layoutY="31.0" prefHeight="136.0" prefWidth="314.0" style="-fx-background-radius: 30;" styleClass="dashBackground" stylesheets="@../styles/style.css">
+         <children>
+            <Label layoutX="87.0" layoutY="24.0" text="Today Total Service">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="60.0" fitWidth="49.0" layoutX="10.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asstes/dash002.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblTotalService" layoutX="233.0" layoutY="68.0" prefHeight="47.0" prefWidth="57.0" text="08">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

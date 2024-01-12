@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Pane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.SupplierFormController">
+   <AnchorPane layoutX="-3.0" layoutY="-1.0" prefHeight="521.0" prefWidth="1092.0" styleClass="paneBackground" stylesheets="@../styles/style.css">
+      <children>
+         <ImageView fitHeight="527.0" fitWidth="1093.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../asstes/dash1.png" />
+            </image>
+         </ImageView>
+         <TextField fx:id="txtSupplierName" layoutX="395.0" layoutY="67.0" opacity="0.75" prefHeight="45.0" prefWidth="301.0" promptText="Supplier Name" styleClass="lablebtn">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </TextField>
+         <TextField fx:id="txtContactInformation" layoutX="755.0" layoutY="67.0" opacity="0.75" prefHeight="45.0" prefWidth="301.0" promptText="Contact Information" styleClass="lablebtn">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </TextField>
+         <TextField fx:id="txtAddress" layoutX="47.0" layoutY="157.0" opacity="0.75" prefHeight="45.0" prefWidth="301.0" promptText="Address" styleClass="lablebtn">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </TextField>
+         <Button layoutX="119.0" layoutY="225.0" mnemonicParsing="false" onAction="#ClearOnAction" prefHeight="41.0" prefWidth="144.0" styleClass="dashBackground" text="Clear">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Button>
+         <Button layoutX="369.0" layoutY="225.0" mnemonicParsing="false" onAction="#DeleteOnAction" prefHeight="41.0" prefWidth="144.0" styleClass="dashBackground" text="Delete">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Button>
+         <Button layoutX="599.0" layoutY="225.0" mnemonicParsing="false" onAction="#UpdateOnAction" prefHeight="41.0" prefWidth="144.0" styleClass="dashBackground" text="Update">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Button>
+         <Button layoutX="829.0" layoutY="225.0" mnemonicParsing="false" onAction="#SaveOnAction" prefHeight="41.0" prefWidth="144.0" styleClass="dashBackground" text="save">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Button>
+         <TableView fx:id="tblSupplier" layoutX="207.0" layoutY="283.0" opacity="0.85" prefHeight="214.0" prefWidth="682.0">
+            <columns>
+               <TableColumn fx:id="colSupplierId" minWidth="170.0" prefWidth="75.0" text="Supplier ID" />
+               <TableColumn fx:id="colSupName" minWidth="170.0" prefWidth="75.0" text="Supplier Name" />
+               <TableColumn fx:id="colContactInformation" minWidth="170.0" prefWidth="75.0" text="Contact Information" />
+               <TableColumn fx:id="colAddress" minWidth="170.0" prefWidth="75.0" text="Address" />
+               <TableColumn minWidth="170.0" prefWidth="75.0" />
+            </columns>
+         </TableView>
+         <Button layoutX="911.0" layoutY="413.0" mnemonicParsing="false" onAction="#supplierItemOnAction" prefHeight="88.0" prefWidth="170.0" styleClass="btn" text="Supplier Item Date and Time" />
+         <Label layoutX="47.0" layoutY="46.0" text="Supplier Id :">
+            <font>
+               <Font name="System Bold" size="15.0" />
+            </font>
+         </Label>
+         <Label fx:id="lblSupplierID" layoutX="47.0" layoutY="80.0" textFill="#f81d1d">
+            <font>
+               <Font name="System Bold" size="24.0" />
+            </font>
+         </Label>
+         <ComboBox fx:id="cmbuserId" layoutX="420.0" layoutY="158.0" opacity="0.75" prefHeight="35.0" prefWidth="199.0" promptText="User Id" />
+      </children>
+   </AnchorPane>
+</AnchorPane>

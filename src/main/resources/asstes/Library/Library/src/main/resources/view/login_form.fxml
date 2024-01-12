@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Pane" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Library.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1400.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/loginimage.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtUserName" layoutX="514.0" layoutY="184.0" prefHeight="35.0" prefWidth="419.0" promptText="Email or UserName">
+         <font>
+            <Font size="24.0" />
+         </font></TextField>
+      <Button layoutX="495.0" layoutY="367.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="266.0" style="-fx-background-color: transperant;" text="Remember Me">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="476.0" layoutY="522.0" prefHeight="40.0" prefWidth="353.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Button layoutX="236.0" layoutY="-157.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="266.0" style="-fx-background-color: transperant;" text="Forget Password ?">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <TextField fx:id="txtPassword" layoutX="519.0" layoutY="304.0" prefHeight="35.0" prefWidth="419.0" promptText="Password">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Button layoutX="663.0" layoutY="627.0" mnemonicParsing="false" onAction="#CreateNewOneOnAction" prefHeight="59.0" prefWidth="266.0" style="-fx-background-color: transperant;" text="Create New One" textFill="#043cf2">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="603.0" layoutY="440.0" mnemonicParsing="false" onAction="#LoginOnAction" prefHeight="59.0" prefWidth="213.0" style="-fx-background-color: #0366FF;" text="Login">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

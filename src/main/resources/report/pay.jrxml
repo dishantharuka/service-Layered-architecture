@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="pay" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e3ba4d29-8de3-41e7-a6c4-87ff5839fd29">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="pay"/>
+	<queryString language="SQL">
+		<![CDATA[select * from payment]]>
+	</queryString>
+	<field name="PaymentID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="PaymentID"/>
+		<property name="com.jaspersoft.studio.field.label" value="PaymentID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+	</field>
+	<field name="Amount" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Amount"/>
+		<property name="com.jaspersoft.studio.field.label" value="Amount"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+	</field>
+	<field name="PaymentMethod" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="PaymentMethod"/>
+		<property name="com.jaspersoft.studio.field.label" value="PaymentMethod"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+	</field>
+	<field name="ItemID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ItemID"/>
+		<property name="com.jaspersoft.studio.field.label" value="ItemID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+	</field>
+	<group name="PaymentID">
+		<groupExpression><![CDATA[$F{PaymentID}]]></groupExpression>
+	</group>
+	<group name="Amount">
+		<groupExpression><![CDATA[$F{Amount}]]></groupExpression>
+	</group>
+	<group name="PaymentMethod">
+		<groupExpression><![CDATA[$F{PaymentMethod}]]></groupExpression>
+	</group>
+	<group name="ItemID">
+		<groupExpression><![CDATA[$F{ItemID}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="81" splitType="Stretch">
+			<rectangle>
+				<reportElement x="10" y="5" width="535" height="71" backcolor="#5F96DE" uuid="d7eff258-c714-4e0e-bacb-426ad29e9640"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="141" y="17" width="279" height="47" backcolor="#6EAAE6" uuid="cf7a7694-a991-450e-a97f-89c3b103bab1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Payment History]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
+			<staticText>
+				<reportElement x="0" y="0" width="141" height="61" uuid="916167e4-43fa-4fb8-b11d-c4aa0a776beb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="073503a9-4575-4569-a532-73d1dc82a50b"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[PaymentID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="141" y="0" width="138" height="61" uuid="26341daa-88ed-48ed-a5b7-e10bdae661f4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="75724fe5-3d5d-4cda-bac5-54f0bf50b141"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="0" width="138" height="61" uuid="ca98a57b-3cda-4f7d-bda5-dba8b4af1152">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ecae7a7b-0e3b-4ee7-a422-9f8c974a4a87"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[PaymentMethod]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="417" y="0" width="138" height="61" uuid="cfd0aa1a-94a1-4881-888b-3afdc6befbe5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b390a228-3b91-47ea-8510-931cc9036b5a"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[ItemID]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="53" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
+			<textField>
+				<reportElement x="0" y="0" width="141" height="53" uuid="71862bad-d028-4817-8c0b-df7fd20f87ee">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="073503a9-4575-4569-a532-73d1dc82a50b"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{PaymentID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="141" y="0" width="138" height="53" uuid="1d4568b2-4c2a-4b1d-ba22-b38dd7581713">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="75724fe5-3d5d-4cda-bac5-54f0bf50b141"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Amount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="0" width="138" height="53" uuid="1d7ac133-ca9b-437a-8fba-263fdb6a4449">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ecae7a7b-0e3b-4ee7-a422-9f8c974a4a87"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{PaymentMethod}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="0" width="138" height="53" uuid="caf06115-c790-4bf7-9c69-9e98b4235a7b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b390a228-3b91-47ea-8510-931cc9036b5a"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{ItemID}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

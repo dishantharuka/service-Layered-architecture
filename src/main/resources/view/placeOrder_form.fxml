@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Pane" prefHeight="505.0" prefWidth="1056.0" styleClass="paneBackground" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.PlaceOrderFormController">
+   <children>
+      <ImageView fitHeight="505.0" fitWidth="1056.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asstes/dash1.png" />
+         </image>
+      </ImageView>
+      <JFXComboBox fx:id="cmbCustomerId" labelFloat="true" layoutX="73.0" layoutY="33.0" onAction="#cmbCustomerIdOnAction" prefHeight="37.0" prefWidth="261.0" promptText="Customer ID :" />
+      <TextField fx:id="txtCustomerName" layoutX="386.0" layoutY="44.0" opacity="0.75" prefHeight="28.0" prefWidth="437.0" promptText="Customer Name :" />
+      <JFXComboBox fx:id="cmbItemCode" labelFloat="true" layoutX="73.0" layoutY="90.0" onAction="#cmbItemOnAction" prefHeight="28.0" prefWidth="263.0" promptText="Item Code :" />
+      <TextField fx:id="txtDescription" layoutX="386.0" layoutY="90.0" opacity="0.75" prefHeight="28.0" prefWidth="437.0" promptText="Item Description :" />
+      <TextField fx:id="txtQtyOnHand" layoutX="76.0" layoutY="162.0" opacity="0.75" prefHeight="28.0" prefWidth="196.0" promptText="Qty. on Hand" />
+      <TextField fx:id="txtUnitPrice" layoutX="303.0" layoutY="162.0" opacity="0.75" prefHeight="28.0" prefWidth="196.0" promptText="Unit Price" />
+      <TextField fx:id="txtQty" layoutX="535.0" layoutY="162.0" onAction="#txtQty_OnAction" opacity="0.75" prefHeight="28.0" prefWidth="196.0" promptText="Qty." />
+      <JFXButton id="btnSave" fx:id="btnSave" layoutX="766.0" layoutY="162.0" onAction="#btnAdd_OnAction" prefHeight="28.0" prefWidth="74.0" style="-fx-cursor: hand;" text="Add" />
+      <Label fx:id="lblId" alignment="CENTER_RIGHT" layoutX="962.0" layoutY="15.0" prefHeight="26.0" prefWidth="74.0" text="OD001">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblOrderDetails" layoutX="12.0" layoutY="233.0" opacity="0.85" prefHeight="249.0" prefWidth="825.0">
+         <columns>
+            <TableColumn fx:id="colItemId" prefWidth="118.33333587646484" text="Item ID" />
+            <TableColumn fx:id="colDescription" prefWidth="234.66666412353516" text="Description" />
+            <TableColumn fx:id="colQty" prefWidth="99.0" text="Qty" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="142.0" text="Unit Price" />
+            <TableColumn fx:id="colTotal" prefWidth="124.0" text="Total" />
+            <TableColumn fx:id="colAction" prefWidth="105.0" />
+         </columns>
+      </TableView>
+      <Label fx:id="lblTotal" layoutX="931.0" layoutY="426.0" text="0000.00">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <JFXButton id="btnSave" fx:id="btnPlaceOrder" layoutX="903.0" layoutY="384.0" onAction="#btnPlaceOrder_OnAction" prefHeight="35.0" prefWidth="101.0" style="-fx-cursor: hand; -fx-text-fill: black;" styleClass="dashBackground" stylesheets="@../styles/style.css" text="Place Order" />
+      <Label fx:id="lblTotal1" layoutX="840.0" layoutY="431.0" text="Total :">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblId1" alignment="CENTER_RIGHT" layoutX="894.0" layoutY="15.0" prefHeight="26.0" prefWidth="74.0" text="Id : ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="8.0" layoutY="7.0" mnemonicParsing="false" onAction="#backBtnOnAction" prefHeight="12.0" prefWidth="52.0" style="-fx-background-color: #FFFFFF;" text="Back" />
+   </children>
+</AnchorPane>

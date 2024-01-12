@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1280.0" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.DashboardFormController">
+   <children>
+      <Pane layoutX="-7.0" layoutY="-8.0" prefHeight="609.0" prefWidth="204.0" styleClass="dashBackground" stylesheets="@../styles/style.css">
+         <children>
+            <Button layoutX="20.0" layoutY="427.0" mnemonicParsing="false" onAction="#ItemOnAction" prefHeight="38.0" prefWidth="172.0" styleClass="btn" text="Item">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button layoutX="20.0" layoutY="368.0" mnemonicParsing="false" onAction="#SupplierOnAction" prefHeight="38.0" prefWidth="172.0" styleClass="btn" text="Supplier">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button layoutX="20.0" layoutY="308.0" mnemonicParsing="false" onAction="#EmployeeOnAction" prefHeight="38.0" prefWidth="172.0" styleClass="btn" text="Employee">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button layoutX="20.0" layoutY="192.0" mnemonicParsing="false" onAction="#VehicleOnAction" prefHeight="38.0" prefWidth="172.0" styleClass="btn" text="Vehicals">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button layoutX="20.0" layoutY="132.0" mnemonicParsing="false" onAction="#CustomerOnAction" prefHeight="38.0" prefWidth="172.0" styleClass="btn" text="Customer">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button layoutX="20.0" layoutY="488.0" mnemonicParsing="false" onAction="#PaymentsOnAction" prefHeight="38.0" prefWidth="172.0" styleClass="btn" text="Payments">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button layoutX="20.0" layoutY="548.0" mnemonicParsing="false" onAction="#RecordOnAction" prefHeight="38.0" prefWidth="172.0" styleClass="btn" text="Record">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="28.0" fitWidth="31.0" layoutX="151.0" layoutY="313.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asstes/EMPLOYEE%20ICON.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="31.0" layoutX="151.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asstes/supplier%20ICON.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="31.0" layoutX="151.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asstes/item%20ICON.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="31.0" layoutX="155.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asstes/vehicle%20ICON.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="31.0" layoutX="154.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asstes/CUSTOMER%20ICON.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="31.0" layoutX="155.0" layoutY="493.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asstes/payment%20ICON.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="31.0" layoutX="151.0" layoutY="553.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asstes/SERVICE%20RECORD%20ICON.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="19.0" layoutY="249.0" mnemonicParsing="false" onAction="#AppoinmentOnAction" prefHeight="38.0" prefWidth="172.0" styleClass="btn" text="Appoinments">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="28.0" fitWidth="31.0" layoutX="153.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../WhatsApp_Image_2023-12-02_at_14.35.13-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Button alignment="BOTTOM_CENTER" layoutX="7.0" layoutY="8.0" mnemonicParsing="false" onAction="#DashBoardOnAction" prefHeight="92.0" prefWidth="197.0" style="-fx-background-color: #4895e1;" text="DASHBOARD">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="38.0" fitWidth="42.0" layoutX="87.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asstes/DASHBOARD%20ICONr.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="197.0" prefHeight="93.0" prefWidth="1084.0" style="-fx-background-color: #4895e1;" stylesheets="@../styles/style.css">
+         <children>
+            <Button layoutX="924.0" layoutY="7.0" mnemonicParsing="false" onAction="#SignOutOnAction" prefHeight="29.0" prefWidth="148.0" style="-fx-background-color: #4895e1;" text="SignOut">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="25.0" fitWidth="21.0" layoutX="1035.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asstes/LOGOUT%20ICON.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbltime" alignment="TOP_CENTER" layoutX="586.0" layoutY="8.0" prefHeight="31.0" prefWidth="110.0" text="Time" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbldate" alignment="TOP_CENTER" layoutX="770.0" layoutY="9.0" prefHeight="31.0" prefWidth="110.0" text="Date" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="441.0" layoutY="8.0" mnemonicParsing="false" onAction="#reportOnAction" prefHeight="29.0" prefWidth="113.0" styleClass="DashBtn" stylesheets="@../styles/style.css" text="Report" />
+            <Label alignment="TOP_LEFT" layoutX="105.0" prefHeight="53.0" prefWidth="328.0" text="Basil Auto Care ">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="174.0" layoutY="42.0" prefHeight="31.0" prefWidth="187.0" text="Service center" textFill="#111111">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="93.0" fitWidth="91.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../../../../BASIL%20AUTO%20CARE-logos/BASIL%20AUTO%20CARE-logos_transparent.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="ChangePane" layoutX="197.0" layoutY="94.0" prefHeight="507.0" prefWidth="1084.0" />
+   </children>
+</AnchorPane>

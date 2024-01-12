@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Pane" prefHeight="400.0" prefWidth="600.0" styleClass="loginBackground" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.SignupFormController">
+   <children>
+      <Label layoutX="113.0" layoutY="10.0" text="Sign up" textFill="#fffefe">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="173.0" style="-fx-font-weight: 5;" text="Email Address" />
+      <Label layoutX="56.0" layoutY="220.0" text="Password" />
+      <TextField fx:id="txtEmail" layoutX="55.0" layoutY="189.0" opacity="0.4" prefHeight="25.0" prefWidth="191.0" promptText="email">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPassword" layoutX="55.0" layoutY="237.0" opacity="0.4" prefHeight="25.0" prefWidth="191.0" promptText="password" style="-fx-font-family: 12;">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Button layoutX="55.0" layoutY="300.0" mnemonicParsing="false" onAction="#SignUpOnAction" prefHeight="25.0" prefWidth="191.0" style="-fx-background-color: #24a0ed;" text="Sign up" />
+      <CheckBox layoutX="57.0" layoutY="274.0" mnemonicParsing="false" onAction="#AgreeOnAction" text="I agree to the terms &amp; policy">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="85.0" layoutY="350.0" text="Have an account?" />
+      <Hyperlink layoutX="180.0" layoutY="347.0" onAction="#LogInOnAction" text="Log in" />
+      <Label layoutX="59.0" layoutY="80.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="45.0" text="Get Started Now" textFill="#f5f4f4">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="76.0" style="-fx-font-weight: 5;" text="Name" />
+      <TextField fx:id="txtName" layoutX="52.0" layoutY="93.0" opacity="0.4" prefHeight="25.0" prefWidth="191.0" promptText="name">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="400.0" fitWidth="285.0" layoutX="332.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../styles/img.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtUserId" layoutX="52.0" layoutY="139.0" opacity="0.4" prefHeight="25.0" prefWidth="191.0" promptText="User ID">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <Label layoutX="53.0" layoutY="122.0" style="-fx-font-weight: 5;" text="User ID" />
+      <ImageView fitHeight="406.0" fitWidth="341.0" layoutX="339.0" layoutY="-3.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asstes/img_1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
